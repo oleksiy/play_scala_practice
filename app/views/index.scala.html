@@ -1,7 +1,10 @@
-@(message: String)
+@(message: String, names: List[String], time: String)
+@layout {
+    <h1>@Html(message)</h1>
 
-@main("Welcome to Play") {
+    @namelist(names)
 
-    @play20.welcome(message)
-
+    <p>
+    @(s"The current tiem is: $time")
+    </p>
 }

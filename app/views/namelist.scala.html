@@ -1,0 +1,12 @@
+@(names: List[String])
+@if(names.isEmpty) {
+    <h2>Nothing to show.</h2>
+} else {
+    <ul>
+    @names.map { name =>
+        <li>
+            @name
+        </li>
+    }
+    </ul>
+}
