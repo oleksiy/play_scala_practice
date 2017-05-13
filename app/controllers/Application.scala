@@ -9,7 +9,7 @@ class Application extends Controller {
     val time = new java.util.Date();
     val names = List("James", "Oliver", "PopEye", "Gordon", "Nathan")
     val names2 = List.empty
-    Ok(views.html.index("Hello, again, world - passed from Controller <small>SMALL FONT</small>", names2, time.toString))
+    Ok(views.html.index("Hello, again, world - passed from Controller <em>emphasized font</em>", names2, time.toString))
   }
 
   def another = Action { implicit request =>

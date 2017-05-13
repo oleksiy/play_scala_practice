@@ -1,4 +1,4 @@
-name := "play_scala_blank"
+name := "play-scala-scratchwork"
 
 version := "1.0"
 
